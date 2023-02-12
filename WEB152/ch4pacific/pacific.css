@@ -1,0 +1,38 @@
+/* Global styles for the document */
+body {
+    background-color: #FFFFFF;
+    color: #555555;
+  }
+  
+  /* Styles for the header element */
+  header {
+    background-color: #002171;
+    color: #FFFFFF;
+  }
+  
+  /* Styles for the nav element */
+  nav {
+    background-color: #BBDEFB;
+  }
+  
+  /* Styles for the h2 element */
+  h2 {
+    color: #1976D2;
+  }
+  
+  /* Styles for the dt element */
+  dt {
+    color: #002171;
+  }
+  
+  /* Styles for the resort class */
+  .resort {
+    color: #1976D2;
+  }
+  /* Styles for the h1 element */
+  h1 {
+    margin-bottom: 0;
+  }
+
+  
+  
