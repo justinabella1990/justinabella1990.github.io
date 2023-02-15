@@ -1,0 +1,67 @@
+/* Global styles for the document */
+body {
+  background-color: #FFFFFF;
+  color: #555555;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Styles for the header element */
+header {
+  background-image: url("sunset.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  color: #FFFFFF;
+  line-height: 400%;
+  text-indent: 1em;
+}
+
+/* Styles for the nav element */
+nav {
+  background-color: #BBDEFB;
+  font-weight: bold;
+}
+
+/* Styles for the nav a element */
+nav a {
+  text-decoration: none;
+}
+
+/* Styles for the h1 element */
+h1 {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+/* Styles for the h2 element */
+h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #1976D2;
+}
+
+/* Styles for the h3 element */
+h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #000033;
+}
+
+/* Styles for the ul element */
+ul {
+  list-style-image: url("marker.gif");
+}
+
+/* Styles for the footer element */
+footer {
+  font-size: 75%;
+  font-style: italic;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+/* Styles for the resort class */
+.resort {
+  font-weight: bold;
+}
+
+/* Styles for the contact id */
+#contact {
+  font-size: 90%;
+}
