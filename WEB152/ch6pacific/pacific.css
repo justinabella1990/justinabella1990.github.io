@@ -31,6 +31,7 @@ header {
 /* Styles for the h1 element */
 h1 {
   font-family: Georgia, "Times New Roman", serif;
+  margin-bottom: 0;
   margin-top: 0;
 }
 
@@ -38,6 +39,7 @@ h1 {
 nav {
   background-color: #FFFFFF;
   text-align: center;
+  font-weight: bold;
   padding: 1em;
 }
 
@@ -51,6 +53,16 @@ main {
 h2 {
   font-family: Georgia, "Times New Roman", serif;
   text-shadow: 1px 1px #CCCCCC;
+}
+
+/* Styles for h3 element */
+h3 {
+  color: #000032
+}
+
+/* Styles for dt element */
+dt {
+  color: #002171
 }
 
 /* Styles for the footer element */
