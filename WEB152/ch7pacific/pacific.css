@@ -47,11 +47,10 @@ h1 {
 /* The nav element selector. */
 nav {
   float: left;
-  /* font-size: 120%; */
+  font-size: 120%;
   padding: 1.5em;
   font-weight: bold;
   width: 160px;
-
 }
 
 /* The homehero id selector. */
