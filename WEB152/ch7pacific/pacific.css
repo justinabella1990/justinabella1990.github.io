@@ -101,7 +101,7 @@ nav {
 main {
   background-color: #FFFFFF;
   margin-left: 190px;
-  padding-left: 1px 20px 30px;
+  padding-left: 1px 20px 20px 30px;
   display: block;
   overflow: auto;
 }
@@ -134,7 +134,7 @@ footer {
 
 /* Configure the navigation area. */
 nav ul {
-  list-style: none;
+  list-style-type: none;
   margin: 0;
   padding-left: 0;
   font-size: 1.2em;
