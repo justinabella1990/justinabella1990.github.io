@@ -6,13 +6,14 @@
 /* The wrapper id selector. */
 #wrapper {
   background-color: #90C7E3;
-  border: 1px solid #000033;
-  background-image: linear-gradient(to bottom, #C2E0F9, #FFFFFF);
-  box-shadow: 3px 3px 3px #333;
+  border: 1px solid #000033;  
   margin: auto;
   min-width 960px;
   max width 2048px;
   width 80%
+  background-image: linear-gradient(to bottom, #C2E0F9, #FFFFFF);
+  box-shadow: 3px 3px 3px #333;
+
 }
 
 /* The body element selector. */
