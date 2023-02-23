@@ -44,6 +44,22 @@ h1 {
   margin-top: 0;
 }
 
+/* Styles for the h2 element */
+h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  text-shadow: 1px 1px #CCCCCC;
+}
+
+/* Styles for h3 element */
+h3 {
+  color: #000032
+}
+
+/* Styles for dt element */
+dt {
+  color: #002171
+}
+
 /* The nav element selector. */
 nav {
   float: left;
