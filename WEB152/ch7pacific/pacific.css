@@ -58,16 +58,27 @@ nav {
 #homehero {
   margin-left: 190px;
   background-image: url(coast2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 300px;
 }
 
 /* The yurthero id selector. */
 #yurthero {
   margin-left: 190px;
+  background-image: url(yurt.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 300px;
 }
 
 /* The trailhero id selector. */
 #trailhero {
   margin-left: 190px;
+  background-image: url(trail.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 300px;
 }
 
 /* The main element selector. */
@@ -99,6 +110,10 @@ main ul {
 footer {
   margin-left: 190px;
   background-color: #FFFFFF;
+  font-size: 75%;
+  font-style: italic;
+  padding: 2em;
+  text-align: center;
 }
 
 /* Configure the navigation area. */
