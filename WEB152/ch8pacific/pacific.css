@@ -104,9 +104,9 @@ nav li {
 
 /* The homehero id selector. */
 #homehero {
-  background-image: url(../ch8pacific/coast2.jpg);
+  background-image: url("https://justinabella1990.github.io/WEB152/ch8pacific/homehero.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   height: 300px;
 }
 
@@ -207,4 +207,12 @@ main {
         "footer footer";
     }
   }
-}
+
+    /* New media query for screens up to 1440px */
+    @media screen and (max-width: 1440px) {
+      /* Adjust the width of the #wrapper selector */
+      #wrapper {
+        width: 90%;
+      }
+    }
+  }
