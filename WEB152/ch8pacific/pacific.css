@@ -212,12 +212,4 @@ main {
         "nav footer";
     }
   }
-
-    /* New media query for screens up to 1440px */
-    @media screen and (max-width: 1440px) {
-      /* Adjust the width of the #wrapper selector */
-      #wrapper {
-        width: 90%;
-      }
-    }
-  }
+}
