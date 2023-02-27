@@ -140,3 +140,22 @@ main {
 }
 
 /* Removed section element selector and its styles */
+
+@media screen and (min-width: 600px) {
+  /* Styles for the navigation menu */
+  nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav li {
+    border-bottom: none;
+  }
+
+  /* Styles for the content sections */
+  section {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+}
