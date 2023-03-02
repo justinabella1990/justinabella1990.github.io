@@ -215,181 +215,169 @@ main {
 }
 
 /* add new style rules above the media queries */
-/* Configure the table */
 table {
   border: 2px solid #3399CC;
   border-collapse: collapse;
 }
 
-/* Configure the table cells */
-td, th {
+td,
+th {
   border: 2px solid #3399CC;
   padding: 0.5em;
   text-align: center;
 }
 
-/* Center the td content */
 td {
   text-align: center;
 }
 
-/* Configure the text class */
 .text {
   text-align: left;
 }
 
-/* Configure alternate-row background color */
 tr:nth-of-type(odd) {
   background-color: #F5FAFC;
 }
 
 table {
   border-bottom: 2px solid #1976d2;
-  border-collapse: separate; /* Changed this style to separate because I 
-  liked the look of the white border between the cells */
-  }
-  /* This style gives the thead the blue background color with white 
-  lettering */
-  th {
+  border-collapse: separate;
+}
+
+th {
   background-color: #01216e;
   color: #fff;
-  }
-  td,
-  th {
+}
+
+td,
+th {
   padding: 0.5em;
-  /* border: 2px solid #39c;  */
-  }
-  td {
-  text-align: center; /* tac */
-  }
-  .text {
-  text-align: left; /* ta:l */
-  }
-  tr:nth-last-of-type(odd) {
+}
+
+td {
+  text-align: center;
+}
+
+.text {
+  text-align: left;
+}
+
+tr:nth-last-of-type(odd) {
   background-color: #F5FAFC;
-  }
-  @media (max-width: 600px) {
+}
+
+@media (max-width: 600px) {
   header {
-  background-image: none;
+    background-image: none;
   }
   #homehero,
   #yurthero,
   #trailhero {
-  background-size: auto;
+    background-size: auto;
   }
-  /* Table styles for smartphone devices */
   #special table {
-  display: block; /* db */
-  border-bottom: none; /* bd:n */
+    display: block;
+    border-bottom: none;
   }
   #special td,
   #special th {
-  display: block; /* db */
+    display: block;
   }
-  /* Hide the table header elements */
   #special thead {
-  display: none; /* dn */
+    display: none;
   }
-  /* Use the ::before pseudo-element to inject these labels before each 
-  row of cell content. It is often used to add cosmetic content to an 
-  element with the content property. The content property is a handy trick 
-  for revealing extra bits of data hidden in HTML. */
   td.package::before {
-  content: "Package:";
+    content: "Package:";
   }
   td.description::before {
-  content: "Description:";
+    content: "Description:";
   }
   td.nights::before {
-  content: "Nights:";
+    content: "Nights:";
   }
   td.cost::before {
-  content: "Cost:";
+    content: "Cost:";
   }
   td.package,
   td.description,
   td.nights,
   td.cost {
-  padding-left: 35%; /* pl35% */
-  position: relative; /* pos:r */
-  text-align: left; /* ta:l */
-  font-size: 4vw; /* Relative length units specify a length relative to 
-  another length property. Relative length units scale better between 
-  different rendering medium. vw = relative to 1% of the height of the 
-  viewport. Viewport = the browser window size. If the viewport is 50cm 
-  wide, 1vw = 0.5cm. */
+    padding-left: 35%;
+    position: relative;
+    text-align: left;
+    font-size: 4vw;
   }
   td::before {
-  position: absolute; /* pos:a */
-  top: 10px; /* t6 */
-  left: 0.5em; /* l.5em */
-  font-weight: bold; /* fwb */
-  color: #01216e; /* changed color to blue */
+    position: absolute;
+    top: 10px;
+    left: 0.5em;
+    font-weight: bold;
+    color: #01216e;
   }
   td:last-of-type {
     border-bottom: 2px solid #1b69b2;
   }
-  
-  @media (min-width: 600px) {
-    nav ul {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: space-around;
-    }
-    nav li {
-      border-bottom: none;
-    }
-    .flow {
-      display: flex;
-      flex-direction: row;
-    }
-    section {
-      flex: 1;
-      margin-right: 1em;
-    }
+}
+
+@media (min-width: 600px) {
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
   }
-  
-  @media (min-width: 1024px) {
-    #wrapper {
-      margin: auto;
-      width: 80%;
-      border: 1px solid #002171;
-      box-shadow: 3px 3px 3px #002171;
+  nav li {
+    border-bottom: none;
+  }
+  .flow {
+    display: flex;
+    flex-direction: row;
+  }
+  section {
+    flex: 1;
+    margin-right: 1em;
+  }
+}
+
+@media (min-width: 1024px) {
+  #wrapper {
+    margin: auto;
+    width: 80%;
+    border: 1px solid #002171;
+    box-shadow: 3px 3px 3px #002171;
+  }
+  nav {
+    text-align: left;
+    padding-left: 1em;
+  }
+  @supports (display: grid) {
+    nav ul {
+      flex-direction: column;
+      padding-top: 1em;
+    }
+    .hero {
+      grid-area: hero;
+    }
+    header {
+      grid-area: header;
     }
     nav {
-      text-align: left;
-      padding-left: 1em;
+      grid-area: nav;
     }
-    @supports (display: grid) {
-      nav ul {
-        flex-direction: column;
-        padding-top: 1em;
-      }
-      .hero {
-        grid-area: hero;
-      }
-      header {
-        grid-area: header;
-      }
-      nav {
-        grid-area: nav;
-      }
-      main {
-        grid-area: main;
-      }
-      footer {
-        grid-area: footer;
-      }
-      #wrapper {
-        display: grid;
-        grid-template:
-          "header header"
-          "nav hero"
-          "nav main"
-          "nav footer"
-          / 180px 1fr;
-      }
+    main {
+      grid-area: main;
     }
-  }
-} 
+    footer {
+      grid-area: footer;
+    }
+    #wrapper {
+      display: grid;
+      grid-template:
+        "header header"
+        "nav hero"
+        "nav main"
+        "nav footer"
+        / 180px 1fr;
+    }
+  }  
+}
