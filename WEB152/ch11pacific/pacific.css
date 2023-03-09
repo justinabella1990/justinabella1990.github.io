@@ -378,7 +378,7 @@ tr:nth-of-type(odd) {
   }
 }
 @media (max-widtch: 730px) {
-  video {
+  .pacificvideos {
     display: block;
     float: none;
     clear: both;
