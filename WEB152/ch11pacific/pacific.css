@@ -80,10 +80,9 @@ main ul {
   font-size: 1.2em;
   list-style: none;
   margin: 0;
-  padding-left: .8em;
+  padding-left: 0.8em;
   list-style-type: disc; /* add bullet points */
 }
-
 
 /* The footer element selector. */
 footer {
@@ -158,7 +157,7 @@ main {
 
 form {
   display: flex;
-  flex-flow:column nowrap;
+  flex-flow: column nowrap;
 }
 
 input,
@@ -225,7 +224,7 @@ textarea {
     main {
       grid-area: main;
     }
-    #gallery{
+    #gallery {
       grid-area: gallery;
     }
     .hero {
@@ -246,7 +245,7 @@ textarea {
         "nav main"
         "nav footer";
     }
-    #gallery{
+    #gallery {
       grid-template-columns: repeat(3, 1fr);
     }
   }
@@ -275,7 +274,7 @@ td {
 
 tr:nth-of-type(odd) {
   background-color: #dab40c;
-} 
+}
 
 table {
   border-bottom: 2px solid #1976d2;
@@ -302,7 +301,7 @@ td {
 
 tr:nth-of-type(odd) {
   background-color: #dab40c;
-} 
+}
 
 @media (max-width: 600px) {
   header {
@@ -451,4 +450,3 @@ tr:nth-of-type(odd) {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
