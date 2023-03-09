@@ -35,6 +35,15 @@ video {
   float: right;
   margin-right: 1em;
 }
+#gallery {
+  display: grid;
+  gap: 2em;
+}
+#gallery img {
+  box-shadow: 10px 10px 10px #777;
+  text-align: center;
+  width: 100%;
+}
 
 /* The h1 element selector. */
 h1 {
@@ -216,6 +225,9 @@ textarea {
     main {
       grid-area: main;
     }
+    #gallery{
+      grid-area: gallery;
+    }
     .hero {
       grid-area: hero;
     }
@@ -233,6 +245,9 @@ textarea {
         "nav hero"
         "nav main"
         "nav footer";
+    }
+    #gallery{
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 }
@@ -362,7 +377,15 @@ tr:nth-of-type(odd) {
     margin-right: 1em;
   }
 }
-
+@media (max-widtch: 730px) {
+  video {
+    display: block;
+    float: none;
+    clear: both;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
 @media (min-width: 1024px) {
   #wrapper {
     margin: auto;
@@ -423,6 +446,9 @@ tr:nth-of-type(odd) {
   input[type="submit"] {
     grid-column: 2 / 3;
     width: 9em;
+  }
+  #gallery {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
