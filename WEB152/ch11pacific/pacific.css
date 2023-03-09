@@ -377,7 +377,7 @@ tr:nth-of-type(odd) {
     margin-right: 1em;
   }
 }
-@media (max-widtch: 730px) {
+@media (max-width: 730px) {
   .pacificvideos {
     display: block;
     float: none;
