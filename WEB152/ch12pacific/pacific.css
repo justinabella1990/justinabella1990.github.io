@@ -143,6 +143,26 @@ footer {
   background-size: 100% 100%;
   height: 300px;
 }
+#islandhero {
+  background-image: url("myisland.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 300px;
+}
+#familyhero {
+  background-image: url("familypic.jpg");
+  background-repeat: no-repeat;
+  background-size: 75.29% 130%;
+  height: 300px;
+}
+#kayakhero {
+  background-image: url("kayak.jpg");
+  background-repeat: no-repeat;
+  background-size: contain; 
+  background-position: center;
+  height: 300px;
+}
+
 #yurthero {
   background-image: url(../ch8pacific/yurt.jpg);
   background-repeat: no-repeat;
@@ -217,6 +237,40 @@ video {
   width: 100%; /* full width of image container */
 }
 
+/* About us related styling */
+#grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.grid-item {
+  padding: 10px;
+  border: none;
+
+}
+
+.title-section {
+  background-color: #fff;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+
+
 /* Responsive styles */
 @media (max-width: 600px) {
   /* Header styles */
@@ -227,7 +281,10 @@ video {
   /* Hero image styles */
   #homehero,
   #yurthero,
-  #trailhero {
+  #trailhero,
+  #familyhero,
+  #islandhero,
+  #kayakhero {
     background-size: auto; /* make background images responsive */
   }
 
@@ -332,6 +389,11 @@ td:last-of-type {
   #gallery {
     grid-template-columns: repeat(2, 1fr);
   }
+  #grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
 }
 
 /* Media query for screens with maximum width of 730px */
