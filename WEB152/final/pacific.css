@@ -232,18 +232,6 @@ video {
   gap: 2em; /* space between images */
 }
 
-/* About us related styling */
-
-#grid-container { 
-  display: grid; 
-  grid-template-columns: 1fr 1fr; 
-  grid-gap: 20px; 
-}
-
-.grid-item { 
-  padding: 10px; 
-  border: none; 
-}
 
 .title-section {
   background-color: #fff;
@@ -251,17 +239,6 @@ video {
   padding: 20px;
   text-align: center;
 }
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-.container { 
-  width: 80%; 
-  margin: 0 auto; 
-  text-align: center; 
-} 
 
 /* Responsive styles */
 @media (max-width: 600px) {

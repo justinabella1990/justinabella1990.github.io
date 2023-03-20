@@ -236,30 +236,12 @@ video {
   box-shadow: 10px 10px 10px #777; /* shadow around images */ width: 100%; /* full width of image container */ 
 }
 
-/* About us related styling */
-
-.grid-item { 
-  padding: 10px; 
-  border: none; 
-}
-
 .title-section {
   background-color: #fff;
   color: #fff;
   padding: 20px;
   text-align: center;
 }
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-.container { 
-  width: 80%; 
-  margin: 0 auto; 
-  text-align: center; 
-} 
 
 /* Responsive styles */
 @media (max-width: 600px) {
