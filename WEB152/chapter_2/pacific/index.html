@@ -59,6 +59,22 @@
     </footer>
   </div>
 </body>
+<a href="#" id="my-link">Click me to play sound</a>
+
 <audio id="notification-sound" src="../../ch12pacific/Cartoon Cowbell.mp3"></audio>
+
+<a href="#" id="my-link">Click me to play sound</a>
+
+<audio id="notification-sound" src="../../ch12pacific/Cartoon Cowbell.mp3"></audio>
+
+<script>
+  const link = document.getElementById('my-link');
+  const audio = document.getElementById('notification-sound');
+
+  link.addEventListener('click', (event) => {
+    event.preventDefault(); // prevent the link from navigating to a new page
+    audio.play();
+  });
+</script>
 
 </html>
